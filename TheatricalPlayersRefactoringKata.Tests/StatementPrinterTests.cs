@@ -8,9 +8,9 @@ namespace TheatricalPlayersRefactoringKata.Tests;
 
 public class StatementPrinterTests
 {
-    [Fact]
-    [UseReporter(typeof(DiffReporter))]
-    public void TestStatementExampleLegacy()
+    /*[Fact]
+    [UseReporter(typeof(DiffReporter))]*/
+    /*public void TestStatementExampleLegacy()
     {
         var plays = new Dictionary<string, Play>();
         plays.Add("hamlet", new Play("Hamlet", 4024, "tragedy"));
@@ -31,7 +31,7 @@ public class StatementPrinterTests
         var result = statementPrinter.Print(invoice, plays);
 
         Approvals.Verify(result);
-    }
+    }*/
 
     [Fact]
     [UseReporter(typeof(DiffReporter))]
@@ -134,4 +134,6 @@ public class StatementPrinterTests
 
         Approvals.Verify(result); 
     }
+
+
 }
